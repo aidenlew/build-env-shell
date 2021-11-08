@@ -6,15 +6,18 @@
 echo checking brew...
 if ! command -v brew &> /dev/null
 then
-	echo "<the_command> could not be found"
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	echo "brew could not be found."
+	echo "installing brew.."
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else 
 	echo "brew exists."
 fi
 
 # iTerm2
+brew list iTerm2 &> /dev/null || brew install iTerm2
 
 # tmux
+brew list tmux &> /dev/null || brew install tmux
 
 # Python3. install and set path of python == python3
 
