@@ -20,7 +20,7 @@ brew list iTerm2 &> /dev/null || brew install iTerm2
 brew list tmux &> /dev/null || brew install tmux
 
 # Python3. install and set path of python == python3
-PATH = "$PATH:/usr/local/bin/python3
+PATH = "$PATH:/usr/local/bin/python3"
 
 # Jupyterlab
 brew install jupyterlab
